@@ -1,7 +1,10 @@
 (ns one-function-to-rule-them-all)
 
 (defn concat-elements [a-seq]
-  :-)
+ (if (empty? a-seq)
+    ()
+    (concat (first a-seq) (concat-elements(rest a-seq)))))
+
 
 (defn str-cat [a-seq]
   :-)
