@@ -6,8 +6,9 @@
     (concat (first a-seq) (concat-elements(rest a-seq)))))
 
 
-(defn str-cat [a-seq]
-  :-)
+(defn str-cat-test [a-seq]
+  (reduce str a-seq))
+
 
 (defn my-interpose [x a-seq]
   [:-])
